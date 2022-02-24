@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CryptoComponent } from './containers/crypto/crypto.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     CryptoComponent
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SharedModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
